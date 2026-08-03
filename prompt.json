@@ -1,0 +1,56 @@
+{
+  "prompt_metadata": {
+    "app_name": "ZipMaster",
+    "tagline": "Open any archive. Instantly.",
+    "target_platform": "Android (Kotlin + Jetpack Compose)",
+    "language": "Kotlin",
+    "ui_framework": "Jetpack Compose",
+    "architecture_pattern": "MVVM + Clean Architecture",
+    "build_system": "Gradle Kotlin DSL",
+    "min_sdk": 24,
+    "target_sdk": 34,
+    "category": "Utilities / File Manager",
+    "monetization": "Free + $2.99/month Pro (no ads + RAR support)"
+  },
+  "agent_instructions": {
+    "role": "You are a Senior Android Engineer. Build ZipMaster: ZipMaster opens and creates ZIP, RAR, 7Z, TAR, and GZ archives directly on your Android phone. Browse archive contents, extract files, and create new ZIPs without a PC.",
+    "design_philosophy": "Premium, fast, and minimal. This is a utility app — performance is the feature. Users should feel instant response on every tap.",
+    "code_standards": [
+      "Jetpack Compose for all UI with Material Design 3.",
+      "Room database for history, bookmarks, recent files.",
+      "Hilt for dependency injection throughout all layers.",
+      "WorkManager for background processing tasks.",
+      "Google Play Billing 6.x for Pro subscription.",
+      "Foreground Service for long-running media/conversion operations."
+    ]
+  },
+  "technical_specification": {
+    "core_dependencies": {
+      "archive_engine": "org.apache.commons:commons-compress:1.25.0 for ZIP/TAR/GZ + junrar library for RAR support","file_access": "Android Storage Access Framework (SAF)",
+      "database": "androidx.room:room-runtime:2.6.1",
+      "dependency_injection": "com.google.dagger:hilt-android:2.51",
+      "navigation": "androidx.navigation:navigation-compose:2.7.7",
+      "billing": "com.android.billingclient:billing-ktx:6.1.0"
+    },
+    "key_permissions": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>\n<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+    "ui_ux_design": {
+      "theme_color_palette": {
+        "primary": "#EA580C (Archive Orange)",
+        "secondary": "#78716C (Neutral Grey)",
+        "background": "#FFF7ED",
+        "dark_background": "#1C0A00"
+      },
+      "design_notes": "Dark mode is primary for media apps. Light mode available. Large touch targets for playback controls."
+    }
+  },
+  "execution_steps": [
+    {"step_1": "Setup project with Hilt, Room, Navigation Compose. Configure core engine dependency."},
+    {"step_2": "Implement file picker with Storage Access Framework (SAF) and recent files tracking."},
+    {"step_3": "Build core viewer/player screen with gesture controls and zoom/seek."},
+    {"step_4": "Add settings screen: theme, default behavior, quality options."},
+    {"step_5": "Implement bookmarks/annotations/favorites with Room persistence."},
+    {"step_6": "Build home screen with recent files grid and folder browser."},
+    {"step_7": "Add any cloud integration (Google Drive, Dropbox) via their SDKs."},
+    {"step_8": "Integrate Google Play Billing for Pro tier, add AdMob for free tier."}
+  ]
+}

@@ -1,0 +1,27 @@
+﻿App Name: ZipMaster
+Version: 1.0.0
+Platform: Android (Kotlin + Jetpack Compose)
+Category: Utilities / File Manager
+Target Market: Global
+Price Model: Free + $2.99/month Pro (no ads + RAR support)
+
+Description:
+ZipMaster opens and creates ZIP, RAR, 7Z, TAR, and GZ archives directly on your Android phone. Browse archive contents, extract files, and create new ZIPs without a PC.
+
+Key Features:
+- Open: ZIP, RAR, RAR5, 7Z, TAR, GZ, BZ2, XZ
+- Create new ZIP archives from selected files
+- Browse archive contents without fully extracting
+- Selective extraction: pick specific files to extract
+- Password-protected archive support (open encrypted ZIPs and RARs)
+- Preview images and text files inside archives
+- Split archive support
+- Compression level selector when creating ZIPs
+- Extract to custom output folder
+- Share extracted files immediately
+- File manager integration with Android intent system
+- Progress bar for large archive operations
+
+Target Audience: Android users who receive ZIP/RAR files via email, Telegram, or browser
+Competitors: ZArchiver, RAR for Android, WinZip
+Unique Value Proposition: Cleanest UI with selective extraction — preview before you extract
